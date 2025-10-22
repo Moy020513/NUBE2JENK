@@ -1,6 +1,27 @@
 {% extends 'base.html' %}
 {% block title%} Blog de Noticias{% endblock %}
 {% block content%}
+
+<style>
+
+    .card {
+        background-color: graysilver;
+        padding: 15px;
+        border-radius: 20px;
+        border: 8px solid darkgray;
+
+    }
+    .card-content {
+        background-color: skyblue;
+        padding: 15px;
+        border-radius: 15px;
+        text-align: justify;
+    }
+    .title.is-4 {
+        color: darkblue;
+        text-align: center;
+    }
+</style>
 <div class="columns">
     <div class="column is-offset-3 is-6">
 		    <a  href="{{ url_for('add_post') }}" class="button is-success"><i class="fa-solid fa-plus"></i> &nbsp; Agregar noticia</a>
